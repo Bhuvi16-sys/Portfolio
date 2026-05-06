@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BHUVI JAIN - Professional Portfolio</title>
+    
+    <!-- Link to external style sheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Poppins Font for professional look -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- AOS (Animate On Scroll) library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="dark-mode">
+
+    <!-- Animated Background Canvas -->
+    <canvas id="animated-bg" class="animated-bg-canvas"></canvas>
+
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="container">
+            <a href="BHUVI.jpeg" class="logo">BHUVI JAIN</a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/bhuvi-jain-370733306" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/Bhuvi16-sys" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section (similar to image header) -->
+    <section id="hero" class="hero" style="background-image: url('./images/hero-bg.jpg');">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <p class="hero-subtitle">WELCOME TO MY WORLD</p>
+            <h1 class="hero-title">BHUVI JAIN</h1>
+            <h2 class="typed-text-holder">I'M A <span class="typed-text"></span></h2>
+            <p class="hero-description">Full-Stack Developer and AI Enthusiast dedicated to building intelligent, scalable web solutions</p>
+            <a href="#about" class="btn btn-red">LEARN MORE</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-flex">
+                <div class="about-image" data-aos="fade-right">
+                    <img src="BHUVI.jpeg" alt="BHUVI JAIN Profile" class="img-fluid">
+                </div>
+                <div class="about-content" data-aos="fade-left">
+                    <h2 class="section-title">ABOUT ME</h2>
+                    <h3 class="about-name">I am <span class="highlight">BHUVI JAIN</span></h3>
+                    <p>Hey, I'm Bhuvi! I build web apps that do more than just sit there—they actually think! My focus is on Clean Code, Smart AI, and Scalable Systems. If you’re looking to turn a complex idea into a high-performance digital product that’s ready for the future, let’s make it happen.</p>
+                    <p>I have spent the last two years honing my skills in Full-Stack Development, Data Structures, and AI/ML, working on diverse projects that have required a blend of technical prowess and creative problem-solving. From architecting responsive frontends with React and Tailwind CSS to implementing intelligent backend logic using Node.js and Python, I focus on building systems that are both scalable and user-centric. As a Tech Lead, I also thrive in collaborative environments, ensuring that every line of code translates into a functional solution for real-world challenges.</p>
+                    <ul class="personal-details">
+                        <li><span>Field:</span> Full-Stack Developer, AI/ML Enthusiast</li>
+                        <li><span>Experience:</span> 2 Years</li>
+                        <li><span>Location:</span> Bhopal, Madhya Pradesh</li>
+                        <li><span>Email:</span> jainbhuvi7@gmail.com</li>
+                        <li><span>Phone:</span> +91 8305970767</li>
+                        <li><span>Language:</span> English, Hindi</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Download / Summary Section (as requested) -->
+    <section id="resume" class="resume">
+        <div class="container" data-aos="fade-up">
+            <h2 class="section-title text-center">MY RESUME</h2>
+            <div class="resume-wrapper">
+                <div class="resume-col">
+                    <h3 class="resume-title">Education</h3>
+                    <div class="resume-item">
+                        <h4 class="resume-item-title">B.Tech in CSE Core</h4>
+                        <p class="resume-item-company">VIT Bhopal University</p>
+                        <p class="resume-item-date">2024 - 2028</p>
+                        <p class="resume-item-desc">CGPA: 9.06/10. Relevant coursework: Data Structures & Algorithms, DBMS, Object-Oriented Programming (OOPs), Computer Networks, Java, C/C++, Internet and Web Programming, and Cloud Computing.</p>
+                    </div>
+                    <div class="resume-item">
+                        <h4 class="resume-item-title">Class XII</h4>
+                        <p class="resume-item-company">Swami Vivekanand Model Hig. Sec. School</p>
+                        <p class="resume-item-date">MP Board</p>
+                        <p class="resume-item-desc">Percentage: 82%</p>
+                    </div>
+                    <div class="resume-item">
+                        <h4 class="resume-item-title">Class X</h4>
+                        <p class="resume-item-company">Jawahar Navodaya Vidhyalaya - Khurai, Sagar</p>
+                        <p class="resume-item-date">CBSE Board</p>
+                        <p class="resume-item-desc">Percentage: 92.4%</p>
+                    </div>
+                </div>
+                <div class="resume-col">
+                    <h3 class="resume-title">Professional Experience</h3>
+                    <div class="timeline-container">
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h4 class="resume-item-title">AI & Machine Learning Internship</h4>
+                                <p class="resume-item-company">Edunet Foundation · AICTE · IBM SkillsBuild</p>
+                                <p class="resume-item-date">15 Jan - 26 Feb, 2026</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h4 class="resume-item-title">Core Member of Web Development Team</h4>
+                                <p class="resume-item-company">KAVACH - VIT Bhopal · Freelance</p>
+                                <p class="resume-item-date">Feb 2026 - Present</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h4 class="resume-item-title">Technical Lead</h4>
+                                <p class="resume-item-company">Stats-O-Locked Club</p>
+                                <p class="resume-item-date">Feb 2026 - Present</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h4 class="resume-item-title">Core Member (Content Team)</h4>
+                                <p class="resume-item-company">Bit By Bit Club</p>
+                                <p class="resume-item-date">Dec 2025 - Present</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="text-center resume-download">
+                <button onclick="downloadResume()" class="btn btn-red">DOWNLOAD RESUME <i class="fas fa-file-download"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section (inspired by image layout) -->
+    <section id="skills" class="skills">
+        <div class="container" data-aos="fade-up">
+            <h2 class="section-title text-center">SKILL AREA</h2>
+            <p class="skills-intro text-center">Overview of my technical toolkit and professional proficiency, developed through years of experience and dedicated learning.</p>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-logo"><i class="fab fa-html5"></i></div>
+                    <p>HTML5</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-logo"><i class="fab fa-css3-alt"></i></div>
+                    <p>CSS3</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-logo"><i class="fab fa-js"></i></div>
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-logo"><i class="fab fa-react"></i></div>
+                    <p>React</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-logo"><i class="fab fa-node-js"></i></div>
+                    <p>Node.js</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-logo"><i class="fas fa-server"></i></div>
+                    <p>Express.js</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-logo"><i class="fab fa-python"></i></div>
+                    <p>Python</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-logo"><i class="fas fa-database"></i></div>
+                    <p>SQL</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-logo"><i class="fas fa-leaf"></i></div>
+                    <p>MongoDB</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-logo"><i class="fas fa-chart-line"></i></div>
+                    <p>Seaborn</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-logo"><i class="fas fa-palette"></i></div>
+                    <p>UI/UX Design</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-logo"><i class="fab fa-react"></i></div>
+                    <p>Next.js</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container" data-aos="fade-up">
+            <h2 class="section-title text-center">MY PROJECTS</h2>
+            <div class="projects-grid">
+                <!-- Project Card 1 -->
+                <div class="project-card">
+                    <img src="1.png" alt="" class="project-img">
+                    <div class="project-details">
+                        <h4 class="project-title">Cattle Disease Detection</h4>
+                        <p class="project-desc">Cattle disease detection platform - that bridges the gap between technology and compassionate care.</p>
+                        <div class="project-tags">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Express.js</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://cattle-disease-detection-v1gl.onrender.com/" target="_blank">Live <i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/Bhuvi16-sys/cattle_disease_detection" target="_blank">Repo <i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Project Card 2 -->
+                <div class="project-card">
+                    <img src="2.png" alt="l" class="project-img">
+                    <div class="project-details">
+                        <h4 class="project-title">CTRL + LOL (Stats O'Locked Official Event Website)</h4>
+                        <p class="project-desc">A futuristic, data-driven, high-performance official website for Stats O'Locked (SOL) — a technical club dedicated to innovation, analytics, research, creativity, and leadership development.</p>
+                        <div class="project-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Supabase</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://ctrl-lol.onrender.com/" target="_blank">Live <i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/Bhuvi16-sys/CTRL-LOL" target="_blank">Repo <i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="project-card">
+                    <img src="3.png" alt="" class="project-img">
+                    <div class="project-details">
+                        <h4 class="project-title">Deep Seek Clone - Frontend project</h4>
+                        <p class="project-desc"> Cloned the exact UI of the Deep Seek platform.</p>
+                        <div class="project-tags">
+                            <span class="tech-tag">next.js</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                            <span class="tech-tag">clerk</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://deep-seek-clone-bzfq.vercel.app/" target="_blank">Live <i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/Bhuvi16-sys/DeepSeek_Clone" target="_blank">Repo <i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates">
+        <div class="container" data-aos="fade-up">
+            <h2 class="section-title text-center">CERTIFICATES</h2>
+            <div class="certificates-grid">
+                <!-- Certificate 1 -->
+                <div class="certificate-item">
+                    <img src="forage.png" alt="Tata GenAI Data Analytics" class="cert-thumb">
+                    <h4 class="cert-name">Tata - GenAI Powered Data Analytics Job Simulation</h4>
+                    <p class="cert-issuer">Forage</p>
+                    <p class="cert-date">January 2026</p>
+                    <p class="cert-id">ID: EDWnNtTaypKNx2cTB</p>
+                    <a href="https://www.theforage.com/completion-certificates/ifobHAoMjQs9s6bKS/gMTdCXwDdLYoXZ3wG_ifobHAoMjQs9s6bKS_6940b784af171cf17d6778f3_1767794534901_completion_certificate.pdf" class="view-cert btn btn-outline" target="_blank">VIEW CERTIFICATE</a>
+                </div>
+                 <!-- Certificate 2 -->
+                <div class="certificate-item">
+                    <img src="byb.png" alt="Bits and Bytes of Computer Networking" class="cert-thumb">
+                    <h4 class="cert-name">Bits and Bytes of Computer Networking</h4>
+                    <p class="cert-issuer">Coursera</p>
+                    <p class="cert-date">November 2025</p>
+                    <a href="https://coursera.org/share/230c02d37af2b4eabb4202c9493ec626" class="view-cert btn btn-outline" target="_blank">VIEW CERTIFICATE</a>
+                </div>
+                 <!-- Certificate 3 -->
+                <div class="certificate-item">
+                    <img src="4.png" alt="Introduction to Generative AI Studio" class="cert-thumb">
+                    <h4 class="cert-name">Introduction to Generative AI Studio</h4>
+                    <p class="cert-issuer">Simplilearn</p>
+                    <p class="cert-date">November 2025</p>
+                    <p class="cert-id">ID: 9465260</p>
+                    <a href="https://simpli-web.app.link/e/KmaTmFMbAYb" class="view-cert btn btn-outline" target="_blank">VIEW CERTIFICATE</a>
+                </div>
+                 <!-- Certificate 4 -->
+                <div class="certificate-item">
+                    <img src="unstop.png" alt="Hack4Delhi Participation" class="cert-thumb">
+                    <h4 class="cert-name">Hack4Delhi Participation</h4>
+                    <p class="cert-issuer">Unstop Holiday Fest 2025 / NSUT</p>
+                    <p class="cert-date">2025</p>
+                    <p class="cert-id">Participant</p>
+                    <a href="https://unstop.com/certificate-preview/5dfa1650-a6df-4a22-b225-40e4b0efd328" class="view-cert btn btn-outline" target="_blank">VIEW CERTIFICATE</a>
+                </div>
+                 <!-- Certificate 5 -->
+                <div class="certificate-item">
+                    <img src="image.png" alt="SQL Advanced" class="cert-thumb">
+                    <h4 class="cert-name">SQL (Advanced)</h4>
+                    <p class="cert-issuer">HackerRank</p>
+                    <p class="cert-date">07 Sep 2025</p>
+                    <p class="cert-id">ID: 218CC7121B41</p>
+                    <a href="https://www.hackerrank.com/certificates/218cc7121b41" class="view-cert btn btn-outline" target="_blank">VIEW CERTIFICATE</a>
+                </div>
+                 <!-- Certificate 4 -->
+                <div class="certificate-item">
+                    <img src="ion.png" alt="TCS iON Career Edge" class="cert-thumb">
+                    <h4 class="cert-name">TCS iON Career Edge - Young Professional</h4>
+                    <p class="cert-issuer">TCS iON</p>
+                    <p class="cert-date">Dec 2025</p>
+                    <p class="cert-id">Cert ID: 240640-29545253-1016</p>
+                    <a href="#" class="view-cert btn btn-outline" target="_blank">VIEW CERTIFICATE</a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p class="developed-by">Designed & Developed by Bhuvi Jain</p>
+        </div>
+    </footer>
+
+    <!-- Interactive Bot UI -->
+    <div id="bot-wrapper" class="bot-wrapper">
+        <div class="bot-icon-bubble" onclick="toggleBotChat()">
+            <i class="fas fa-robot"></i>
+        </div>
+        <div id="bot-chat-window" class="bot-chat-window hidden">
+            <div class="bot-header">
+                <h3>Ask Bhuvi's Bot</h3>
+                <span class="close-bot" onclick="toggleBotChat()">&times;</span>
+            </div>
+            <div id="bot-messages" class="bot-messages">
+                <p class="bot-message start">Hi there! Ask me anything about Bhuvi. Try typing: 'resume', 'contact', or 'projects'.</p>
+            </div>
+            <div class="bot-input-area">
+                <input type="text" id="bot-user-input" placeholder="Type your message...">
+                <button onclick="sendUserMessage()"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
+            <div class="contact-header text-center">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="contact-subtitle">Have a project in mind or want to collaborate? Feel free to reach out!</p>
+            </div>
+            
+            <div class="contact-flex">
+                <!-- Contact Info (Left Side based on your image) -->
+                <div class="contact-info">
+                    <div class="info-card">
+                        <i class="far fa-envelope"></i>
+                        <div class="info-details">
+                            <h4>Email</h4>
+                            <!-- Clicking this will open the user's email app -->
+                            <p><a href="mailto:jainbhuvi7@gmail.com">jainbhuvi7@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="info-details">
+                            <h4>Phone</h4>
+                            <p>+91 8305970767</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="info-details">
+                            <h4>Location</h4>
+                            <p>Bhopal, Madhya Pradesh</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form (Right Side based on your image) -->
+                <div class="contact-form-wrapper">
+                    <!-- The form is intercepted by JS below to show a dynamic animation -->
+                    <form id="contactForm" class="contact-form">
+                        <input type="text" class="form-control" placeholder="Bhuvi Jain" required>
+                        <input type="email" class="form-control" placeholder="jainbhuvi7@gmail.com" required>
+                        <input type="text" class="form-control" placeholder="Subject" required>
+                        <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn-red btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AOS Script initialization -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Typed.js for typing effect -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
