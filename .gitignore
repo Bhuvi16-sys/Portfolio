@@ -1,0 +1,11 @@
+# Ignore image files
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.webp
+
+# Ignore local system files
+.DS_Store
+Thumbs.db
