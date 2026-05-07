@@ -9,7 +9,16 @@
         canvas.height = window.innerHeight;
     }
     resizeCanvas();
-    window.addEventListener('resize', resizeCanvas);
+    
+    function debounce(func, delay) {
+        let timeout;
+        return function(...args) {
+            clearTimeout(timeout);
+            timeout = setTimeout(() => func.apply(this, args), delay);
+        };
+    }
+    
+    window.addEventListener('resize', debounce(resizeCanvas, 200));
     
     // Animation parameters
     const particles = [];
@@ -135,8 +144,24 @@ document.querySelectorAll('.nav-list a').forEach(anchor => {
         // Add an active class to current nav item
         document.querySelectorAll('.nav-list a').forEach(link => link.classList.remove('active'));
         this.classList.add('active');
+        
+        // Close mobile menu on link click
+        const navMenu = document.getElementById('nav-menu');
+        if (navMenu && navMenu.classList.contains('active')) {
+            navMenu.classList.remove('active');
+        }
     });
 });
+
+/* --- Mobile Menu Toggle --- */
+const mobileMenuBtn = document.getElementById('mobile-menu');
+const navMenu = document.getElementById('nav-menu');
+
+if (mobileMenuBtn && navMenu) {
+    mobileMenuBtn.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+}
 
 
 /* --- INTERACTIVE BOT LOGIC --- */
@@ -220,12 +245,12 @@ const skillFillBars = document.querySelectorAll('.skill-fill');
 
 const animateSkills = () => {
     skillFillBars.forEach(bar => {
-        const finalWidth = bar.style.width; // Grab intended width from inline style
-        bar.style.width = '0%'; // Temporarily reset to 0
+        // Use GPU-accelerated transform instead of animating width
+        bar.style.transform = 'scaleX(0)'; // Temporarily reset to 0 scale
         
-        // After reset, re-apply final width to trigger transition
+        // After reset, apply scaleX(1) to trigger transition
         setTimeout(() => {
-             bar.style.width = finalWidth;
+             bar.style.transform = 'scaleX(1)';
         }, 100);
     });
 };
